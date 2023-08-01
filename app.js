@@ -83,9 +83,9 @@ if(gerente === "si"){
 const mozo_bartender = empleados.filter((el) => el.puesto === "mozo" || el.puesto ==="bartender");
 let propina = 0
 if (mozo_bartender.length<5){
-    propina_total = Math.round(Math.random() * 3000)
+    propina_total = Math.round(Math.random() * 5000)
 }else{
-    propina_total = Math.round(Math.random() * 8000)
+    propina_total = Math.round(Math.random() * 10000)
 }
 let propina_por_empleado = Math.round(propina_total / mozo_bartender.length)
 mozo_bartender.forEach((emp) =>{
